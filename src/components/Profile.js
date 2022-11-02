@@ -20,7 +20,7 @@ function Profile() {
       </div>
       <div className="username">
         <h1 className="myname" id="twitter">
-          David temitope
+          David temitopes
         </h1>
         <h3 className="hide" id="slack">
           David temitope

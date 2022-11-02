@@ -5,7 +5,7 @@ function Footer() {
     <footer>
       <img src="img/zuri.svg" alt="" className="zuri" />
       <p className="sample-txt"> HNG Internship 9 Frontend Task</p>
-      <img src="img/ingressive.png" alt="" className="hng" />
+      <img src="/src/img/ingressive.png" alt="" className="hng" />
     </footer>
   );
 }
