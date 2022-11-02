@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap");
+@import "../index.scss";
 header {
-  padding: 20px;
+  padding: 1.7rem;
   /* text-align: center; */
   position: relative;
-  margin-top: 40px;
+  margin-top: 4rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -15,10 +16,10 @@ header {
 }
 .share-icon {
   position: absolute;
-  top: -10px;
-  right: 100px;
-  font-size: 50px;
-  color: #fff;
+  top: -0.8rem;
+  right: 8rem;
+  font-size: 4.8rem;
+  color: $main-bg;
 }
 .menu {
   display: none;
@@ -28,7 +29,7 @@ header {
   width: 100px;
   height: 100px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid $main-bg;
   margin: 0 auto;
 }
 .picture {

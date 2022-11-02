@@ -1,11 +1,14 @@
 import "./Footer.modules.scss";
 
+import ingres from "../img/ingressive.png";
+import zuri from "../img/zuri.svg";
+
 function Footer() {
   return (
     <footer>
-      <img src="img/zuri.svg" alt="" className="zuri" />
+      <img src={zuri} alt="" className="zuri" />
       <p className="sample-txt"> HNG Internship 9 Frontend Task</p>
-      <img src="/src/img/ingressive.png" alt="" className="hng" />
+      <img src={ingres} alt="" className="hng" />
     </footer>
   );
 }

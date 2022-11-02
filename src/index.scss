@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=ABeeZee&family=Inter:wght@300;400;500;600&family=Public+Sans:wght@300;400;700&display=swap");
 
 $link-bg: #eaecf0;
-$main-bf: #f4f5f7;
+$main-bg: #f4f5f7;
 $text-color: #101828;
+
 *,
 *::after,
 *::before {
@@ -14,6 +15,9 @@ $text-color: #101828;
 html {
   font-family: "Inter", sans-serif;
   font-size: 16px;
+}
+body {
+  overflow-x: hidden;
 }
 
 a {
@@ -36,6 +40,9 @@ a {
 
 /* responsive design for mobile */
 @media (max-width: 768px) {
+  html {
+    width: 100%;
+  }
   .app {
     padding: 0;
   }

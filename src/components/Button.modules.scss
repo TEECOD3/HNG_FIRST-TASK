@@ -15,7 +15,7 @@
   cursor: pointer;
   text-decoration: none;
   color: #000;
-}
-.link:hover {
-  background: #dfe1e6;
+  &:hover {
+    background: #dfe1e6;
+  }
 }
