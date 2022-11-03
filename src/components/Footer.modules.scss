@@ -1,31 +1,31 @@
+@import "../index.scss";
 footer {
   display: flex;
-  width: 90rem;
-  justify-content: space-between;
-  padding: 3rem 0;
-  margin: 1rem auto 0rem auto;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-around;
+  padding: 3rem 2rem;
+  margin: 1rem 1rem 0rem auto;
+
   p {
     color: #667085;
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
   }
-}
 
-/* responsive design for mobile */
-@media screen and (min-width: 200px) and (max-width: 768px) {
-  footer {
+  @include respond(mobile) {
+    width: 80%;
+    height: inherit;
     flex-direction: column;
-    /* align-items: center; */
-    margin-left: 1.5rem;
+    margin-left: 1rem;
   }
-  footer p {
+  p {
     margin: 1rem 0;
   }
-
-  footer img {
+  img {
     margin: 1rem 0;
-    width: 100px;
+    width: 8rem;
   }
 }
 

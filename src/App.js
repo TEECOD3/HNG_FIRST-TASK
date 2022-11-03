@@ -3,6 +3,7 @@ import Button from "./components/Button";
 import Profile from "./components/Profile";
 import Socials from "./components/Socials";
 import Footer from "./components/Footer";
+import "./index.scss";
 
 function App() {
   return (
