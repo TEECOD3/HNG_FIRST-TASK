@@ -4,9 +4,13 @@ $link-bg: #eaecf0;
 $main-bg: #f4f5f7;
 $text-color-dark: #101828;
 $text-color-grey: #475467;
+$text-color-form: #344054;
+$text-color-form-i: #667085;
 $html-font-size: 16px;
 $border-color: #d0d5dd;
-
+$button-default: #1570ef;
+$button-hover: #175cd3;
+$button-disabled: #b2ddff;
 //MIXINS
 @mixin flex($display, $justify, $align) {
   display: $display;
