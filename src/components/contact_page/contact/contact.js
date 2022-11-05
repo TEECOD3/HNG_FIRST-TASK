@@ -59,30 +59,19 @@ function Contact() {
                 handleChange={(e) => setLast_name(e.target.value)}
                 placeholder="Enter your last name"
               />
-              
             </div>
-            
-           
 
             <Inputfield
               type="email"
               id="email"
               label="Email"
               required
+              classes="width"
               value={email}
               handleChange={(e) => setEmail(e.target.value)}
               name="email"
               placeholder="yourname@email.com"
-              classes="width-full"
             />
-
-            {/* <div className="input-field">
-              <label>message</label>
-              <textarea
-                type="text"
-                placeholder="Send me a message and I'll reply you as soon as possible..."
-              ></textarea>
-            </div> */}
 
             <Textarea
               id="message"
@@ -90,7 +79,6 @@ function Contact() {
               name="message"
               value={message}
               handleChange={(e) => setMessage(e.target.value)}
-              classes="width-full"
               required
               placeholder="Send me a message and I'll reply you as soon as possible..."
             />
@@ -98,7 +86,6 @@ function Contact() {
             <label className="checkbox-text">
               <input type="checkbox" id="logcheck" />
               <p>
-                {" "}
                 You agree to providing your data to name who may contact you.
               </p>
             </label>
