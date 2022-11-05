@@ -59,21 +59,10 @@ function Contact() {
                 handleChange={(e) => setLast_name(e.target.value)}
                 placeholder="Enter your last name"
               />
-              {/* 
-              <div className="input-fields">
-                <label>firstname</label>
-                <input type="text" placeholder="Enter your first name"></input>
-              </div>
-              <div className="input-fields lastname">
-                <label>lastname</label>
-                <input type="text" placeholder="Enter your last name"></input>
-              </div> */}
+              
             </div>
-            {/* 
-            <div className="input-field">
-              <label>email</label>
-              <input type="email" placeholder="yourname@gmail.com"></input>
-            </div> */}
+            
+           
 
             <Inputfield
               type="email"
