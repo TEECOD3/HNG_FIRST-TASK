@@ -1,0 +1,134 @@
+@import "../../index.scss";
+.contact {
+  width: 100vw;
+  height: rem-calc(980);
+  position: relative;
+  @include respond(mobile) {
+    html,
+    body {
+      width: 100%;
+      height: 100vh;
+    }
+    width: 100%;
+    height: rem-calc(800);
+    padding: 1rem;
+  }
+  .container {
+    width: 60%;
+    height: 80%;
+    margin: rem-calc(120) auto;
+    text-align: start;
+    @include respond(mobile) {
+      width: 100%;
+      padding: 0;
+      margin: rem-calc(100) 0;
+    }
+  }
+
+  &-form {
+    width: 80%;
+    height: 90%;
+    margin: rem-calc(20px) auto;
+    @include respond(mobile) {
+      width: 100%;
+      margin: 0;
+    }
+
+    &-headings {
+      width: 100%;
+      margin-bottom: rem-calc(50);
+
+      &__main {
+        margin-bottom: rem-calc(20);
+      }
+      &__sub {
+        color: $text-color-grey;
+        font-weight: 400;
+      }
+    }
+  }
+  form {
+    height: rem-calc(480);
+
+    .name {
+      @include flex(flex, space-between, center);
+      width: 100%;
+      gap: 2rem;
+
+      .input-fields {
+        width: 40%;
+        width: inherit;
+        display: flex;
+        flex-direction: column;
+
+        label {
+          font-size: 1rem;
+          text-transform: capitalize;
+          color: $text-color-dark;
+        }
+
+        input {
+          width: 100%;
+          height: 44px;
+          margin-top: rem-calc(5);
+          padding: 1rem 0.7rem;
+          border-radius: 8px;
+          border: 2px solid $border-color;
+        }
+      }
+    }
+
+    .input-field {
+      width: 100%;
+      margin-top: 2rem;
+      display: flex;
+      flex-direction: column;
+
+      label {
+        text-transform: capitalize;
+        color: $text-color-dark;
+      }
+      input {
+        width: 100%;
+        height: 44px;
+        margin-top: rem-calc(5);
+        padding: 1rem 0.7rem;
+        border-radius: 8px;
+        border: 2px solid $border-color;
+      }
+
+      textarea {
+        height: rem-calc(132);
+        width: inherit;
+        margin-top: rem-calc(6);
+        padding: 1rem;
+        resize: none;
+        border-radius: 8px;
+        border: 2px solid $border-color;
+        font-family: "Inter", sans-serif;
+      }
+    }
+
+    .checkbox-text {
+      margin: 1rem 0rem;
+      width: 100%;
+
+      input {
+        margin-right: 0.6rem;
+      }
+
+      label {
+        color: $text-color-grey;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: rem-calc(12) rem-calc(20);
+      background-color: #1570ef;
+      color: $main-bg;
+      border: none;
+      border-radius: 8px;
+    }
+  }
+}

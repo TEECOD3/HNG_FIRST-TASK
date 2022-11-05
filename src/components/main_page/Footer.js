@@ -1,7 +1,7 @@
 import "./Footer.modules.scss";
 
-import ingres from "../img/ingressive.png";
-import zuri from "../img/zuri.svg";
+import ingres from "../../img/ingressive.png";
+import zuri from "../../img/zuri.svg";
 
 function Footer() {
   return (

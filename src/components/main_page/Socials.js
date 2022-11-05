@@ -1,7 +1,7 @@
 import React from "react";
 import "./Socials.modules.scss";
-import slack from "../img/slacklogo.png";
-import github from "../img/Icon.svg";
+import slack from "../../img/slacklogo.png";
+import github from "../../img/Icon.svg";
 
 function Socials() {
   return (

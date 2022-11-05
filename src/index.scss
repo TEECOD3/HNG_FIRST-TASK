@@ -2,14 +2,27 @@
 
 $link-bg: #eaecf0;
 $main-bg: #f4f5f7;
-$text-color: #101828;
+$text-color-dark: #101828;
+$text-color-grey: #475467;
+$html-font-size: 16px;
+$border-color: #d0d5dd;
 
+//MIXINS
 @mixin flex($display, $justify, $align) {
   display: $display;
   justify-content: $justify;
   align-items: $align;
 }
 
+//FUNCTIONS
+@function stripUnit($value) {
+  @return $value / ($value * 0 + 1);
+}
+@function rem-calc($pxValue) {
+  @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
+
+//media queries here
 @mixin respond($breakpoint) {
   @if $breakpoint == mobile {
     @media screen and (min-width: 200px) and (max-width: 768px) {
@@ -32,6 +45,7 @@ $text-color: #101828;
     }
   }
 }
+
 //RESET STYLES HERE
 *,
 *::after,
@@ -44,7 +58,7 @@ $text-color: #101828;
 
 html {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: $html-font-size;
   box-sizing: border-box;
   width: 100%;
 
@@ -59,53 +73,4 @@ body {
 
 a {
   text-decoration: none;
-}
-
-.app {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  padding: 1rem;
-
-  @include respond(mobile) {
-    html,
-    body {
-      width: 100%;
-    }
-    padding: 0;
-    width: 100%;
-  }
-}
-
-.container {
-  width: 1219px;
-  padding: 1rem;
-  @include respond(mobile) {
-    padding: 0;
-    width: inherit;
-  }
-}
-
-/* responsive design for mobile */
-// @media (max-width: 768px) {
-//   html {
-//     width: 100%;
-//   }
-//   .app {
-//     padding: 0;
-//   }
-//   .container {
-//     width: 400px !important;
-//     padding: 0;
-//   }
-// }
-
-/* responsive design for ipad  */
-@media (max-width: 1024px) {
-  .container {
-    width: 100%;
-    padding: 1rem 2rem;
-  }
 }

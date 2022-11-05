@@ -1,0 +1,49 @@
+@import "../../index.scss";
+
+.container {
+  width: 1219px;
+  padding: 1rem;
+  @include respond(mobile) {
+    padding: 0;
+    width: inherit;
+  }
+}
+.clicks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+
+  @include respond(mobile) {
+    html,
+    body {
+      width: 100%;
+    }
+    padding: 0;
+    width: 100%;
+  }
+}
+
+/* responsive design for mobile */
+// @media (max-width: 768px) {
+//   html {
+//     width: 100%;
+//   }
+//   .app {
+//     padding: 0;
+//   }
+//   .container {
+//     width: 400px !important;
+//     padding: 0;
+//   }
+// }
+
+/* responsive design for ipad  */
+@media (max-width: 1024px) {
+  .container {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+}
