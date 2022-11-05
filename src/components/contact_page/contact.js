@@ -37,14 +37,12 @@ function Contact() {
               ></textarea>
             </div>
 
-            <div className="checkbox-text">
+            <label className="checkbox-text">
               <input type="checkbox" id="logcheck" />
-              <label htmlFor="logcheck" className="check">
-                You agree to providing your data to name who may contact you.
-              </label>
-            </div>
+            <p> You agree to providing your data to name who may contact you.</p> 
+            </label>
 
-            <button>send message</button>
+            <button className="btn">send message</button>
           </form>
         </div>
       </div>

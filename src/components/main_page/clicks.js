@@ -32,9 +32,11 @@ function clicks() {
         <Button id="book__design" link="https://books.zuri.team/design-rules">
           Design Books
         </Button>
-        <Button id="contact" link="https://books.zuri.team/design-rules">
-          <Link to="/contact">contact us</Link>
-        </Button>
+
+        <Link to="/contact" className="contacta">
+          <Button> contact us</Button>
+        </Link>
+
         <Socials />
       </div>
     </div>
