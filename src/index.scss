@@ -11,6 +11,7 @@ $border-color: #d0d5dd;
 $button-default: #1570ef;
 $button-hover: #175cd3;
 $button-disabled: #b2ddff;
+$color-red:red;
 //MIXINS
 @mixin flex($display, $justify, $align) {
   display: $display;
