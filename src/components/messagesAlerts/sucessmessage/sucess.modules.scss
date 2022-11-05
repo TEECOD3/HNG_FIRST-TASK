@@ -1,0 +1,20 @@
+@import "../../../index.scss";
+
+.alert {
+  background-color: rgba(140, 175, 14, 0.644);
+  width: 30rem;
+  height: 2rem;
+  padding: 2rem 1rem;
+  position: absolute;
+  left: 34rem;
+  top: -5rem;
+  border-radius: 10px;
+  @include flex(flex, center, center);
+
+  @include respond(mobile) {
+    width: 20rem;
+    height: 1rem;
+    top: 5rem;
+    left: 1rem;
+  }
+}

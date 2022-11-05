@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Footer from "./components/main_page/Footer";
 import Clicks from "./components/main_page/clicks";
-import Contacts from "./components/contact_page/contact";
+import Contacts from "./components/contact_page/contact/contact";
 import "./index.scss";
 
 function App() {
