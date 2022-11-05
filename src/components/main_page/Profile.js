@@ -1,8 +1,8 @@
 import React from "react";
 import "./Profile.modules.scss";
-import img from "../../src/img/picture.jpeg";
-import dotted from "../img/dotted-hamburger.svg";
-import share from "../img/share-avater-icon.svg";
+import img from "../../../src/img/picture.jpeg";
+import dotted from "../../img/dotted-hamburger.svg";
+import share from "../../img/share-avater-icon.svg";
 
 function Profile() {
   /*const [width] = React.useState(window.innerWidth);
