@@ -33,7 +33,7 @@ function clicks() {
           Design Books
         </Button>
 
-        <Link to="/contact" className="contacta">
+        <Link to="/contact" id="contact" className="contacta">
           <Button> contact us</Button>
         </Link>
 
