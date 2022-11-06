@@ -90,7 +90,7 @@ function Contact() {
               </p>
             </label>
 
-            <button className="btn">send message</button>
+            <button className="btn" id="btn__submit">send message</button>
           </form>
         </div>
       </div>
